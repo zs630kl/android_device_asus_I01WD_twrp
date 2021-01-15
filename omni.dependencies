@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "github",
+    "repository": "osm0sis/twrp_abtemplate",
+    "target_path": "bootable/recovery/installer",
+    "revision": "master"
+  }
+]
