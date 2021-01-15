@@ -5,10 +5,10 @@ It was released in May 2019.
 
 ## Compile
 
-First download omni-9.0 tree:
+First download omni-10.0 tree:
 
 ```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 ```
 Then add these string to .repo/manifests/remove.xml
 
@@ -16,7 +16,7 @@ Then add these string to .repo/manifests/remove.xml
 Then add these projects to .repo/local_manifests/roomservice.xml (If you don't have it, you can add them to .repo/manifest.xml): 
 
 ```xml
-<project name="TeamWin/android_device_asus_I01WD" path="device/asus/I01WD" remote="github" revision="android-9.0" />
+<project name="TeamWin/android_device_asus_I01WD" path="device/asus/I01WD" remote="github" revision="android-10" />
 ```
 
 Now you can sync your source:
