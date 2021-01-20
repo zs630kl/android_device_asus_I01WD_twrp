@@ -4,5 +4,19 @@
     "repository": "osm0sis/twrp_abtemplate",
     "target_path": "bootable/recovery/installer",
     "revision": "master"
+  },
+  {
+    "remote": "github",
+    "repository": "TeamWin/android_system_core",
+    "target_path": "system/core",
+    "revision": "android-11",
+    "override": "android_system_core"
+  },
+  {
+    "remote": "github",
+    "repository": "TeamWin/android_bootable_recovery",
+    "target_path": "bootable/recovery",
+    "revision": "android-11",
+    "override": "platform/bootable/recovery"
   }
 ]
