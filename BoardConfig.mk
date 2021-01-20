@@ -51,13 +51,13 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-#TARGET_PREBUILT_KERNEL := device/asus/I01WD/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/asus/I01WD/prebuilt/Image.gz-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/I01WD_defconfig
-TARGET_KERNEL_SOURCE := kernel/asus/sm8150
+#BOARD_KERNEL_SEPARATED_DTBO := true
+#TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_CLANG_COMPILE := true
+#TARGET_KERNEL_CONFIG := vendor/I01WD_defconfig
+#TARGET_KERNEL_SOURCE := kernel/asus/sm8150
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
