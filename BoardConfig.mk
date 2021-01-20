@@ -23,6 +23,8 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
+DEVICE_PATH := device/asus/I01WD
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -51,7 +53,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_PREBUILT_KERNEL := device/asus/I01WD/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 #BOARD_KERNEL_SEPARATED_DTBO := true
 #TARGET_KERNEL_ARCH := arm64
@@ -94,7 +96,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 #Init
-TARGET_INIT_VENDOR_LIB := libinit_I01WD
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_I01WD
 TARGET_RECOVERY_DEVICE_MODULES := libinit_I01WD
 
 # Recovery

@@ -23,6 +23,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+# Init
+PRODUCT_PACKAGES += \
+    libinit_I01WD
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
